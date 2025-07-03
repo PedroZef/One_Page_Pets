@@ -10,6 +10,14 @@
 
     <body>
         <!-- Seção de boas-vindas -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#racas">Raças</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
         <header class="header-container">
             <div class="image">
                 <img
@@ -30,7 +38,7 @@
 
         <!-- Seção de cuidados básicos -->
 
-        <section class="section">
+        <section class="section" id="Home">
             <div class="image_esquerda">
                 <img src="./imgs/pets1.png" alt="Cachorros" />
             </div>
@@ -47,7 +55,7 @@
         </section>
 
         <!-- Seção sobre raças de cachorro -->
-        <section class="table-section">
+        <section class="table-section" id="racas">
             <h2>Raças de Cachorro</h2>
             <br />
             <p>
@@ -114,11 +122,23 @@
                     </tr>
                 </tbody>
             </table>
+            <section class="dicas-section" id="dicas">
+                <h2 style="text-align: center; color: rgb(172, 97, 6)" ;>
+                    Dicas para Cuidar do Seu Cão
+                </h2>
+                <div class="dicas-container">
+                    <div class="dica-card">
+                        <h3>Alimentação Saudável</h3>
+                        <p>
+                            Saiba como escolher a ração ideal e os alimentos
+                            proibidos para cães.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
             <!-- Seção de dicas para treinamento -->
-            <h2 style="text-align: center; color: rgb(172, 97, 6)" ;>
-                Dicas para Treinamento de Cachorro
-            </h2>
+
             <br />
             <ol>
                 <li>Use reforço positivo</li>
@@ -135,7 +155,7 @@
         <h2 style="text-align: center; color: rgb(108, 6, 172)">
             Formulário de Contato
         </h2>
-        <form action="processar.php" method="post">
+        <form action="processo.php" id="contato" method="post">
             <label for="nome">Nome:</label><br />
             <input type="text" id="nome" name="nome" required /><br /><br />
 

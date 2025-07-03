@@ -5,24 +5,50 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #222222;
     color: #fff;
 }
-
 
 .header-container {
     display: flex;
     background-color: black;
     align-items: center;
     /* alinha verticalmente */
-	margin-top: 30px;
+    margin-top: 30px;
     border-bottom: 2px solid blue;
     gap: 20px;
     /* espaço entre o texto e a imagem */
     margin-bottom: 30px;
-	width: 100%;
+    width: 100%;
+}
 
+/* Barra de Navegação */
+nav {
+    background-color: #000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: block;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #1a5f1a;
 }
 
 .welcome-text {
@@ -53,7 +79,6 @@ body {
 
     margin-left: 20px 50px;
     flex-direction: row-reverse;
-   
 }
 
 .image_esquerda {
@@ -83,7 +108,7 @@ body {
     color: #ccc;
 }
 
-.table-section  {
+.table-section {
     background-color: grey;
     display: flex;
     flex-direction: column;
@@ -92,42 +117,40 @@ body {
 }
 
 button {
-  height: 36px;
+    height: 36px;
 }
-
 
 .video {
     background-color: burlywood;
     color: blue;
 }
 
-
 iframe {
-	display: inline-block; 
+    display: inline-block;
     flex-direction: row;
-	justify-content: space-between; 
-	gap: 20px; 
-	flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-  input[type="text"],
-  input[type="email"],
-  button {
+input[type='text'],
+input[type='email'],
+button {
     width: 100%;
     max-width: 640px;
-    height: 40px; 
+    height: 40px;
     font-size: 16px;
     box-sizing: border-box;
-  }
+}
 
-  textarea {
+textarea {
     width: 100%;
     max-width: 640px;
     font-size: 16px;
     box-sizing: border-box;
-  }
+}
 
-  footer {
+footer {
     color: rgb(255, 221, 0);
     margin-top: 20px;
     text-align: center;
