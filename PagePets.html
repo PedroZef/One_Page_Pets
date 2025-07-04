@@ -10,7 +10,7 @@
 
     <body>
         <!-- Seção de boas-vindas -->
-        <nav>
+        <nav class="navbar"" id="video">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#racas">Raças</a></li>
@@ -56,7 +56,7 @@
 
         <!-- Seção sobre raças de cachorro -->
         <section class="table-section" id="racas">
-            <h2>Raças de Cachorro</h2>
+            <h2 style="text-align: center; color: blue">Raças de Cachorro</h2>
             <br />
             <p>
                 Existe uma grande diversidade de raças de cachorro, cada uma com
@@ -66,7 +66,6 @@
 
             <table
                 summary="Lista de Clientes"
-                border="2"
                 cellspacing="3px"
                 cellpadding="5px"
             >
@@ -76,7 +75,7 @@
                         <th>Características</th>
                     </tr>
                 </thead>
-                <tbody style="background-color: rgb(235, 198, 198)">
+                <tbody style="background-color: rgb(202, 155, 155)">
                     <tr>
                         <td>Labrador Retriever</td>
                         <td>
@@ -166,7 +165,7 @@
             <textarea
                 id="mensagem"
                 name="mensagem"
-                cols="40"
+                cols="26"
                 rows="15"
                 required
             ></textarea
@@ -176,37 +175,24 @@
         </form>
 
         <!-- Vídeo do YouTube (exemplo) -->
-        <div class="video" style="text-align: center; color: blue">
-            <h2 style="text-align: center">Vídeo sobre Cuidados com Pets</h2>
-            <iframe
-                width="515"
-                height="560"
-                src="https://www.youtube.com/embed/FjJba7UCtoA"
-                title="DE QUEM ???  ⭐Cachorros Coriojosos ⭐#Shorts"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-            ></iframe>
-            <br />
+        <section id="video" style="text-align: center">
             <h2 style="text-align: center; color: blue">
-                Gatinho Bebê Tomando Mamadeira
+                Gatinho Tomando Mamadeira 🍼🐱
             </h2>
-            <iframe
+            <iframe id="video"
                 width="515"
                 height="560"
                 src="https://www.youtube.com/embed/taV-BnKOKVs"
-                title='"Gatinho Bebê Tomando Mamadeira: Fofura  🍼🐱"'
                 frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
+                title="GatinhoTomando Mamadeira 🍼🐱"
+                allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
             ></iframe>
-        </div>
+        </section>
 
         <!-- Rodapé -->
         <footer style="text-align: center">
-            &copy; 2025 - Pedro Zeferino da Silva - 🚀
+            &copy; 2025 - Pedro Zeferino da Silva. 🚀
         </footer>
     </body>
 </html>
